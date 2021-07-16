@@ -1,0 +1,128 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text#marla",
+      "slider-layout#text-test#uno",
+      "slider-layout#text-test#dos"
+    ]
+  },
+  "rich-text#marla": { 
+    "props": { 
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass":"richM"
+      
+    }
+  },
+
+  "slider-layout#text-test#uno": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "image#uno",
+      "image#dos", 
+      "image#tres", 
+      "image#imagen1", 
+      "image#cinco",
+      "image#seis"
+    ]
+  },
+  "image#imagen1": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      // "maxHeight": 100
+    }
+  },
+  "image#uno": {
+    "props": {
+      "src": "https://i0.wp.com/esferacreativa.com/wp-content/uploads/2021/05/tipos-de-banners-digitales-e-impresos-MadridNYC.jpg?fit=1024%2C512&ssl=1"
+      // "maxHeight": "100%"
+    }
+  },
+  "image#dos": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      // "maxHeight": "100%"
+    }
+  },
+  "image#tres": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      // "maxHeight": "100%"
+    }
+  },
+
+  "image#cinco":{
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      // "maxHeight": "100%"
+    }
+  },
+  "image#seis":{
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      // "maxHeight": "100%"
+    }
+  },
+  "slider-layout#text-test#dos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "rich-text#1", 
+      "rich-text#2", 
+      "rich-text#3",
+      "rich-text#4",
+      "rich-text#5",
+      "rich-text#6"
+    ]
+  },
+
+  "rich-text#1": {
+    "props": {
+      "text": "Test1"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Test2"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "Test3"
+    }
+  },
+  "rich-text#4": {
+    "props": {
+      "text": "Test3"
+    }
+  },
+  "rich-text#5": {
+    "props": {
+      "text": "Test3"
+    }
+  },
+  "rich-text#6": {
+    "props": {
+      "text": "Test3"
+    }
+  }
+}
