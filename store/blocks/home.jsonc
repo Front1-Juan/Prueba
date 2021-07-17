@@ -3,6 +3,7 @@
     "blocks": [
       "rich-text#marla",
       "slider-layout#text-test#uno",
+      "shelf#home",
       "slider-layout#text-test#dos"
     ]
   },
@@ -123,6 +124,26 @@
   "rich-text#6": {
     "props": {
       "text": "Test3"
+    }
+  },
+  //vitrina de productos
+  "shelf#home": {
+    "blocks":["product-summary.shelf"],
+    "props":{
+      "productList": {
+        "titleText": "Vitrinas Marla",
+        "itemsPerPage": 4,
+        "maxItems": 10,
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": "true",
+        "blockClass": "textosSec",
+        "showPaginationDots": "never"
+    },
+    "autoplay":{
+      "timeout": 3000,
+      "stopOnHover": true
+    }
     }
   }
 }
