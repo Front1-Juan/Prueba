@@ -1,7 +1,9 @@
 .paragraph--aboutUsFooter{
-    font-size: 16px;
-    color: #393E46;
-    font-family: 'roboto-mediumItalic';
+    font-size: 14px;
+    font-family: 'Raleway-medium';
     margin-left: 25px;
+    color: #2C2C2C;
+    font-weight: bold;
+    font-style: italic;
 }
 
