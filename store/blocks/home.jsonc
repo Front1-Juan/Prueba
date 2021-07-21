@@ -1,21 +1,12 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text#marla",
       "slider-layout#text-test#uno",
-      "shelf#home",
-      "slider-layout#text-test#dos"
+      "info-card#button-right",
+      "info-card#button-left",
+      "shelf#home"
+      // "slider-layout#text-test#dos"
     ]
-  },
-  "rich-text#marla": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1",
-      "blockClass":"richM"
-      
-    }
   },
 
   "slider-layout#text-test#uno": {
@@ -26,112 +17,70 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "never",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
       "blockClass": "carousel"
     },
     "children": [
       "image#uno",
       "image#dos", 
-      "image#tres", 
-      "image#imagen1", 
-      "image#cinco",
-      "image#seis"
+      "image#tres"
     ]
   },
-  "image#imagen1": {
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
-      // "maxHeight": 100
-    }
-  },
+
   "image#uno": {
     "props": {
-      "src": "https://i0.wp.com/esferacreativa.com/wp-content/uploads/2021/05/tipos-de-banners-digitales-e-impresos-MadridNYC.jpg?fit=1024%2C512&ssl=1"
+      "src": "https://www.armadurasdeportivas.com/wp-content/uploads/2021/04/Slider-Armaduras-Deportivas-3.jpg"
       // "maxHeight": "100%"
     }
   },
   "image#dos": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      "src": "https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/landings/2021/sportline/Desktop/1.%20Desktop_Slider_Landing_2280x700_DIC20.jpg"
       // "maxHeight": "100%"
     }
   },
   "image#tres": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+      "src": "https://ola-laropadeportiva.com/modules/xprtsliderblock/images/banner-3-slider-1920x900-fitlovers.jpg"
       // "maxHeight": "100%"
     }
   },
-
-  "image#cinco":{
+  
+  /////////////////info cards/////////////////////////
+  "info-card#button-right": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
-      // "maxHeight": "100%"
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "https://malumaco.vteximg.com.br/arquivos/ids/183245-640-768/Pantaloneta-Sport-Gris-4.jpg?v=637419399356100000",
+      "headline": "Hombre",
+      "subhead": "Encontrarás la mejor ropa deportiva para hombre.",
+      "callToActionMode": "button",
+      "callToActionText": "Comprar",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "cardMen"
     }
   },
-  "image#seis":{
+  "info-card#button-left": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
-      // "maxHeight": "100%"
+    "isFullModeStyle": false,
+    "textPosition": "left",
+    "imageUrl": "https://ae01.alicdn.com/kf/Hdb436ec0352d4fe38d5d3ec609ec18bbx/ropa-deportiva-mujer-conjunto-deportivo-mujer-ropa-de-deporte-para-mujer-ropa-deportiva-conjunto-deportivo-ropa.jpg_Q90.jpg_.webp",
+    "headline": "Mujer",
+    "subhead": "Encontraras diferentes colores y diseño de ropa deportiva .",
+    "callToActionMode": "button",
+    "callToActionText": "Comprar",
+    "textAlignment": "center",
+    "blockClass": "cardWomen"
     }
   },
-  "slider-layout#text-test#dos": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "blockClass": "carousel"
-    },
-    "children": [
-      "rich-text#1", 
-      "rich-text#2", 
-      "rich-text#3",
-      "rich-text#4",
-      "rich-text#5",
-      "rich-text#6"
-    ]
-  },
-
-  "rich-text#1": {
-    "props": {
-      "text": "Test1"
-    }
-  },
-  "rich-text#2": {
-    "props": {
-      "text": "Test2"
-    }
-  },
-  "rich-text#3": {
-    "props": {
-      "text": "Test3"
-    }
-  },
-  "rich-text#4": {
-    "props": {
-      "text": "Test3"
-    }
-  },
-  "rich-text#5": {
-    "props": {
-      "text": "Test3"
-    }
-  },
-  "rich-text#6": {
-    "props": {
-      "text": "Test3"
-    }
-  },
-  //vitrina de productos
+   //vitrina de productos
   "shelf#home": {
     "blocks":["product-summary.shelf"],
     "props":{
       "productList": {
-        "titleText": "Vitrinas Marla",
+        "titleText": "SALE",
         "itemsPerPage": 4,
         "maxItems": 10,
         "minItemsPerPage": 2,

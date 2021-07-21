@@ -1,0 +1,31 @@
+.menuContainerNav{
+    margin: 30px 0px;
+}
+
+.styledLinkContent--menuTitleNew{
+    color:#CE1212;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.styledLinkContent--menuTitle{
+    color: #E48257;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.submenuWrapper{
+    background-color: #FDFAF6;
+}
+
+.styledLinkContent--titleSubMenu{
+    color: #4E3620;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.styledLinkContent--contenidoFooter {
+    color: #151515;
+    font-family: 'roboto-regular';
+    font-size: 16px;
+}

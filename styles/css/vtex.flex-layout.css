@@ -1,3 +1,12 @@
 .flexRow{
     background-color: white;
+    
+}
+
+.flexRowContent--menu-link{
+    height: 100px;
+}
+
+.flexRow--menu-link{
+    background-color: #FDFAF6;
 }

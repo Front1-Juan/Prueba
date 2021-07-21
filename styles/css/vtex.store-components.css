@@ -1,0 +1,58 @@
+.notificationBarInner--envioGratis {
+    background-color:#FFE277;
+    color:#41444B;
+    font-size:12px;
+    font-weight: 600;
+    margin: -14px 0px;
+
+}
+
+.searchBarContainer{
+    margin: 30px 0px;
+    margin-right: 10px;
+}
+
+.infoCardContainer--cardMen{
+    background-size: contain !important;
+    height: 800px;
+    padding: 10px 0px;
+    background-color: #FFFEFA;
+}
+
+.infoCardCallActionContainer--cardMen :global(.vtex-button){
+    background-color: #476072;
+    border: 1px solid #476072;
+}
+
+.infoCardHeadline--cardMen{
+    color: #2B2B2B;
+    font-size: 32px;
+}
+
+
+.infoCardSubhead--cardMen{
+    color: #548CA8;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.infoCardHeadline--cardWomen{
+    color: #DA7F8F;
+    font-size: 32px;
+}
+.infoCardSubhead--cardWomen{
+    color: #45526C;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.infoCardCallActionContainer--cardWomen :global(.vtex-button){
+    background-color: #476072;
+    border: 1px solid #476072;
+}
+
+.infoCardContainer--cardWomen {
+    background-color: #FAF3F3;
+}

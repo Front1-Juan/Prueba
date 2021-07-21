@@ -1,15 +1,49 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop", 
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop", 
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
-      "sticky-layout#desktop"
+      "header-row#1-desktop",
+      "header-row#desktop-bar",
+      "sticky-layout#desktop"//,
+      // "header-row#menu-desktop"
     ]
   },
+  //header bar
+  "header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "header-row#desktop-bar": {
+    "children": [
+      "header-border",
+      "notification.bar#home"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "¡ENVÍO GRATIS POR COMPRAS SUPERIORES A 100.000!",
+      "blockClass": "envioGratis"
+    }
+  },
+  //venia por defecto
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
@@ -22,17 +56,355 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "menu-link",
+      "inverted": "true"
     },
     "children": [
       "flex-layout.col#logo-desktop",
+      "vtex.menu@2.x:menu#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
+      // "locale-switcher",
       "login",
       "minicart.v2"
     ]
   },
+  // "login#prueba": {
+  //   "props": {
+  //     "emailAndPasswordTitle": "LOG-IN",
+  //     "accessCodeTitle": "Acess Code LOG-IN",
+  //     "emailPlaceholder": "e-mail",
+  //     "passwordPlaceholder": "password",
+  //     "showPasswordVerificationIntoTooltip": true
+  //   }
+  // },
+////////////////menu///////////////////////////
+"vtex.menu@2.x:menu#category-menu": {
+  "props": {
+    "experimentalOptimizeRendering": true
+  },
+  "children": [
+    "menu-item#category-new",
+    "menu-item#category-men",
+    "menu-item#category-women"
+    // "menu-item#about-us"
+  ]
+},
+"menu-item#category-new":{
+  "props":{
+    "id": "menu-item-category-new",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/new/",
+      "noFollow": false,
+      "tagTitle": "New",
+      "text": "New"
+    },
+    "blockClass": "menuTitleNew"
+  }
+},
+"menu-item#category-men":{
+  "props":{
+    "id": "menu-item-category-men",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/men/",
+      "noFollow": false,
+      "tagTitle": "HOMBRE",
+      "text": "HOMBRE"
+    },
+    "blockClass": "menuTitle"
+  },
+  "blocks":[
+    "vtex.menu@2.x:submenu#category-men"
+  ]
+},
+///////////Submenu men/////////
+"vtex.menu@2.x:submenu#category-men":{
+  "props": {
+    "width": "auto"
+  },
+  "children": [
+    "vtex.menu@2.x:menu#category-men-camisetas",
+    "vtex.menu@2.x:menu#category-men-pants-licras"
+  ]
+},
+////////////////sub menu camisteas/////////////////
+"vtex.menu@2.x:menu#category-men-camisetas":{
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#category-men-camisetas",
+    "menu-item#category-men-esqueleto",
+    "menu-item#category-men-mangacorta"
+  ]
+},
+"menu-item#category-men-camisetas":{
+  "props": {
+    "id": "menu-item-category-men-camisetas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/camisetas/",
+      "noFollow": false,
+      "tagTitle": "CAMISETAS",
+      "text": "CAMISETAS"
+    },
+    "blockClass": "titleSubMenu"
+  }
+},
+
+
+"menu-item#category-men-esqueleto":{
+  "props": {
+    "id": "menu-item-category-men-esqueleto",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/esqueleto/",
+      "noFollow": false,
+      "tagTitle": "ESQUELETO",
+      "text": "ESQUELETO"
+    }
+  }
+},
+
+"menu-item#category-men-mangacorta":{
+  "props": {
+    "id": "menu-item-category-men-mangacorta",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/mangacorta/",
+      "noFollow": false,
+      "tagTitle": "MANGA CORTA",
+      "text": "MANGA CORTA"
+    }
+  }
+},
+////////////////sub menu pants y licras/////////////////
+"vtex.menu@2.x:menu#category-men-pants-licras":{
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#category-men-pantslicras",
+    "menu-item#category-men-pantalonetas",
+    "menu-item#category-men-licras"
+  ]
+},
+
+"menu-item#category-men-pantslicras":{
+  "props": {
+    "id": "menu-item-category-men-pantslicras",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/pantslicras/",
+      "noFollow": false,
+      "tagTitle": "PANTALONETAS Y LICRAS",
+      "text": "PANTALONETAS Y LICRAS"
+    },
+    "blockClass": "titleSubMenu"
+  }
+},
+
+"menu-item#category-men-pantalonetas":{
+  "props": {
+    "id": "menu-item-category-men-pantalonetas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/pantalonetas/",
+      "noFollow": false,
+      "tagTitle": "PANTALONETAS",
+      "text": "PANTALONETAS"
+    }
+  }
+},
+
+"menu-item#category-men-licras":{
+  "props": {
+    "id": "menu-item-category-men-licras",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/licras/",
+      "noFollow": false,
+      "tagTitle": "LICRAS",
+      "text": "LICRAS"
+    }
+  }
+},
+//////////////menu women////////////////
+"menu-item#category-women":{
+  "props":{
+    "id": "menu-item-category-women",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/women/",
+      "noFollow": false,
+      "tagTitle": "MUJER",
+      "text": "MUJER"
+    },
+    "blockClass": "menuTitle"
+  },
+  "blocks":[
+    "vtex.menu@2.x:submenu#category-women"
+  ]
+},
+////////////////////sub menu women///////////////////////
+"vtex.menu@2.x:submenu#category-women":{
+  "props": {
+    "width": "auto"
+  },
+  "children": [
+    "vtex.menu@2.x:menu#category-women-camisetasytops",
+    "vtex.menu@2.x:menu#category-women-pants-licras"
+  ]
+},
+////////////////sub menu women camisetas y tops///////////////////////
+"vtex.menu@2.x:menu#category-women-camisetasytops":{
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#category-women-camisetasytops",
+    "menu-item#category-women-camisetas",
+    "menu-item#category-women-tops"
+  ]
+},
+
+"menu-item#category-women-camisetasytops":{
+  "props": {
+    "id": "menu-item-category-women-camisetasytops",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/camisetasytops/",
+      "noFollow": false,
+      "tagTitle": "CAMISETAS Y TOPS",
+      "text": "CAMISETAS Y TOPS"
+    },
+    "blockClass": "titleSubMenu"
+  }
+},
+
+"menu-item#category-women-camisetas":{
+  "props": {
+    "id": "menu-item-category-women-camisetas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/camisetas/",
+      "noFollow": false,
+      "tagTitle": "CAMISETAS",
+      "text": "CAMISETAS"
+    }
+  }
+},
+
+"menu-item#category-women-tops":{
+  "props": {
+    "id": "menu-item-category-women-tops",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/tops/",
+      "noFollow": false,
+      "tagTitle": "TOPS",
+      "text": "TOPS"
+    }
+  }
+},
+////////////////sub menu women pants y licras///////////////////////
+"vtex.menu@2.x:menu#category-women-pants-licras":{
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "menu-item#category-women-pantasylicras",
+    "menu-item#category-women-pants",
+    "menu-item#category-women-licras"
+  ]
+},
+
+"menu-item#category-women-pantasylicras":{
+  "props": {
+    "id": "menu-item-category-women-pantasylicras",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/pantasylicras/",
+      "noFollow": false,
+      "tagTitle": "PANTALONETAS Y LICRAS",
+      "text": "PANTALONETAS Y LICRAS"
+    },
+    "blockClass": "titleSubMenu"
+  }
+},
+"menu-item#category-women-pants":{
+  "props": {
+    "id": "menu-item-category-women-pants",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/pants/",
+      "noFollow": false,
+      "tagTitle": "PANTALONETAS",
+      "text": "PANTALONETAS"
+    }
+  }
+},
+"menu-item#category-women-licras":{
+  "props": {
+    "id": "menu-item-category-women-licras",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/licras/",
+      "noFollow": false,
+      "tagTitle": "LICRAS",
+      "text": "LICRAS"
+    }
+  }
+},
+  ///////////////////////////////////////
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -48,7 +420,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "url": "https://www.designevo.com/res/templates/thumb_small/yellow-handbag-and-black-t-shirt.webp",
       "width": "80"
     }
   },

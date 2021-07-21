@@ -1,0 +1,326 @@
+{
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#aboutus",
+      "menu-item#quienessomos",
+      "menu-item#terminos",
+      "menu-item#cambios",
+      "menu-item#politicas"
+    ]
+  },
+  "rich-text#aboutus":{
+    "props": { 
+      "text": "Acerca de nosotros",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-1",
+      "blockClass":"aboutUsFooter"
+      
+    }
+  },
+  "menu-item#quienessomos": {
+    "props": {
+      "id": "menu-item-quienessomos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Quiénes somos",
+        "text": "Quiénes somos"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+  "menu-item#terminos": {
+    "props": {
+      "id": "menu-item-terminos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Terminos",
+        "text": "Términos y Condiciones"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+  "menu-item#cambios": {
+    "props": {
+      "id": "menu-item-cambios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "cambios",
+        "text": "Cambios y Garantías"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+  "menu-item#politicas": {
+    "props": {
+      "id": "menu-item-politicas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "politicas",
+        "text": "Politicas de datos"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-contactanos": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#contactanos",
+      "menu-item#email",
+      "menu-item#whatsapp",
+      "menu-item#tel"
+    ]
+  },
+
+  "rich-text#contactanos":{
+    "props": { 
+      "text": "CONTÁCTANOS",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-1",
+      "blockClass":"aboutUsFooter"
+      
+    }
+  }, 
+  "menu-item#email": {
+    "props": {
+      "id": "menu-item-email",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/email",
+        "noFollow": true,
+        "tagTitle": "email",
+        "text": "Email: contacto@gmail.com.co"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+
+  "menu-item#whatsapp": {
+    "props": {
+      "id": "menu-item-whatsapp",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/whatsapp",
+        "noFollow": true,
+        "tagTitle": "whatsapp",
+        "text": "Whatsapp: (+57) 3135478578"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+
+  "menu-item#tel": {
+    "props": {
+      "id": "menu-item-tel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tel",
+        "noFollow": true,
+        "tagTitle": "tel",
+        "text": "Tel (+123) 4567890 ext 1"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-help": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#help",
+      "menu-item#where",
+      "menu-item#how",
+      "menu-item#guia"
+
+    ]
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#where-mobile",
+      "menu-item#decoration-mobile",
+      "menu-item#sale-mobile"
+    ]
+  },
+
+  "menu-item#where-mobile": {
+    "props": {
+      "id": "menu-item-category-where",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/where",
+        "noFollow": true,
+        "tagTitle": "where",
+        "text": "¿Dónde está mi pedido?"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "vtex.menu@2.x:submenu.accordion#clothing": {
+    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#clothing-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#how",
+      "menu-item#guia"
+    ]
+  },
+
+  "menu-item#decoration-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Decoration",
+        "text": "Decoration"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+  },
+  "vtex.menu@2.x:submenu.accordion#decoration": {
+    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-decoration-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#email",
+      "menu-item#whatsapp",
+      "menu-item#tel"
+    ]
+  },
+
+  "menu-item#sale-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+  },
+  "vtex.menu@2.x:submenu.accordion#sale": {
+    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-sale-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#email",
+      "menu-item#whatsapp",
+      "menu-item#tel"
+    ]
+  },
+  "rich-text#help":{
+    "props": { 
+      "text": "¿TE AYUDAMOS?",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-1",
+      "blockClass":"aboutUsFooter"
+      
+    }
+  },
+  "menu-item#where": {
+    "props": {
+      "id": "menu-item-category-where",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/where",
+        "noFollow": true,
+        "tagTitle": "where",
+        "text": "¿Dónde está mi pedido?"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+
+  "menu-item#how": {
+    "props": {
+      "id": "menu-item-how",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/how",
+        "noFollow": false,
+        "tagTitle": "how",
+        "text": "¿Cómo comprar?"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  },
+
+  "menu-item#guia": {
+    "props": {
+      "id": "menu-item-guia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/guia",
+        "noFollow": false,
+        "tagTitle": "Guía de tallas",
+        "text": "Guía de tallas"
+      },
+      "blockClass":"contenidoFooter"
+    }
+  }
+
+
+}

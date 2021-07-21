@@ -1,10 +1,11 @@
 {
   "vendor": "epartner",
   "name": "minimumtheme",
-  "version": "0.0.7",
+  "version": "0.1.7",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
+    "assets": "0.x",
     "docs": "0.x"
   },
   "scripts": {
