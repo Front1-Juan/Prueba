@@ -1,6 +1,8 @@
-.title::before {content: "";display: block;border-bottom: 2px solid #E1701A;width: 2%;}
-.title::after {content: "";display: block;border-bottom: 2px solid #E1701A;width: 2%;}
+.title::before {content: "";display: block;border-bottom: 1px solid #E0E0E0;width: 40%;}
+.title::after {content: "";display: block;border-bottom: 1px solid #E0E0E0;width: 40%;}
 
 .title{
-    color: #E1701A;
+    font-size: 18px;
+    font-weight: 700;
+    color: #232323;
 }

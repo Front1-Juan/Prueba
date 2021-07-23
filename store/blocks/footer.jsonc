@@ -1,13 +1,14 @@
 {
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
-  },
+    },
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
+
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
@@ -15,8 +16,8 @@
       "vtex.menu@2.x:menu#footer-help",
       "vtex.menu@2.x:menu#footer-contactanos",
       // "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "footer-spacer"
+      // "social-networks"
     ],
     "props": {
       "blockClass": "menu-row",
@@ -25,28 +26,15 @@
     }
   },
 
-  "social-networks": {
-    "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
-    }
-  },
+  // "social-networks": {
+  //   "props": {
+  //     "title": "hola soy un titulo",
+  //     "socialNetworks": [
+  //       { "url": "https://facebook.com/foo", "name": "Facebook" },
+  //       { "url": "https://twitter.com/foo", "name": "Twitter" }
+  //     ]
+  //   }
+  // },
 
   "flex-layout.row#footer-2-desktop": {
     "children": ["accepted-payment-methods"],

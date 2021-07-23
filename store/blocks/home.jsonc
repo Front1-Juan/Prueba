@@ -1,15 +1,16 @@
 {
   "store.home": { 
     "blocks": [
-      "slider-layout#text-test#uno",
-      "info-card#button-right",
-      "info-card#button-left",
-      "shelf#home"
+      "slider-layout#principal",
+      "slider-layout#bannercollection",
+      "shelf#home",
+      "rich-text#combosTitle",
+      "slider-layout#combos"
       // "slider-layout#text-test#dos"
     ]
   },
 
-  "slider-layout#text-test#uno": {
+  "slider-layout#principal": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -17,62 +18,194 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "always",
+      "showNavigationArrows": "never",
       "showPaginationDots": "never",
+      "usePagination": true,
+      "slideTransition": {
+        "speed": 400,
+        "delay": 500,
+        "timing": "ease"
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
       "blockClass": "carousel"
     },
     "children": [
       "image#uno",
       "image#dos", 
-      "image#tres"
+      "image#tres",
+      "image#cuatro"
     ]
   },
 
   "image#uno": {
     "props": {
-      "src": "https://www.armadurasdeportivas.com/wp-content/uploads/2021/04/Slider-Armaduras-Deportivas-3.jpg"
+      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST2.jpg?v=1624556131"
       // "maxHeight": "100%"
     }
   },
   "image#dos": {
     "props": {
-      "src": "https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/landings/2021/sportline/Desktop/1.%20Desktop_Slider_Landing_2280x700_DIC20.jpg"
+      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST9.jpg?v=1624556380"
       // "maxHeight": "100%"
     }
   },
   "image#tres": {
     "props": {
-      "src": "https://ola-laropadeportiva.com/modules/xprtsliderblock/images/banner-3-slider-1920x900-fitlovers.jpg"
+      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST10.jpg?v=1624564987"
+      // "maxHeight": "100%"
+    }
+  },
+  "image#cuatro": {
+    "props": {
+      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST6.jpg?v=1624556441"
       // "maxHeight": "100%"
     }
   },
   
   /////////////////info cards/////////////////////////
-  "info-card#button-right": {
+  ///////////////////banner collections////////////////////
+  "slider-layout#bannercollection": {
     "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "collectionAll"
+    },
+    
+    "children": [
+      "info-card#collection-one-desk", 
+      "info-card#collection-two", 
+      "info-card#collection-three"]
+  },
+
+  ////////////prueba responsive/////////////////77
+  // "responsive-layout.desktop#desktop": {
+  //   "children": ["rich-text#desktop"]
+  // },
+  
+  // "responsive-layout.mobile#mobile": {
+  //   "children": ["rich-text#mobile"]
+  // },
+  ///////////collection-one
+
+  "info-card#collection-one-desk":{
+    "props": {
+      "id": "info-card-slider-collection-one",
       "isFullModeStyle": true,
-      "textPosition": "right",
-      "imageUrl": "https://malumaco.vteximg.com.br/arquivos/ids/183245-640-768/Pantaloneta-Sport-Gris-4.jpg?v=637419399356100000",
-      "headline": "Hombre",
-      "subhead": "Encontrarás la mejor ropa deportiva para hombre.",
       "callToActionMode": "button",
-      "callToActionText": "Comprar",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center",
-      "blockClass": "cardMen"
+      "callToActionText": "HOMBRE",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/Fist-07497_Lente_194a0c77-d286-4e1f-b429-bdc859241add_370x_crop_center.jpg?v=1624567932",
+      // "callToActionText": "Comprar ahora",
+      "callToActionUrl": "/",
+      "blockClass": "collectionFirst",
+      "textAlignment": "center"
     }
   },
-  "info-card#button-left": {
+
+  "info-card#collection-two":{
     "props": {
-    "isFullModeStyle": false,
-    "textPosition": "left",
-    "imageUrl": "https://ae01.alicdn.com/kf/Hdb436ec0352d4fe38d5d3ec609ec18bbx/ropa-deportiva-mujer-conjunto-deportivo-mujer-ropa-de-deporte-para-mujer-ropa-deportiva-conjunto-deportivo-ropa.jpg_Q90.jpg_.webp",
-    "headline": "Mujer",
-    "subhead": "Encontraras diferentes colores y diseño de ropa deportiva .",
-    "callToActionMode": "button",
-    "callToActionText": "Comprar",
-    "textAlignment": "center",
-    "blockClass": "cardWomen"
+      "id": "info-card-slider-collection-two",
+      "isFullModeStyle": true,
+      "callToActionMode": "button",
+      "callToActionText": "MUJER",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/Fist-07273_Lente_87c261f8-1cd6-42d6-bf32-aea0ac44eedd_370x_crop_center.jpg?v=1624567956",
+      // "callToActionText": "Comprar ahora",
+      "callToActionUrl": "/",
+      "blockClass": "collectionFirst",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#collection-three":{
+    "props": {
+      "id": "info-card-slider-collection-three",
+      "isFullModeStyle": true,
+      "callToActionMode": "button",
+      "callToActionText": "GORRAS",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/Fist-07810_Lente_370x_crop_center.jpg?v=1624567990",
+      // "callToActionText": "Comprar ahora",
+      "callToActionUrl": "/",
+      "blockClass": "collectionFirst",
+      "textAlignment": "center"
+    }
+  },
+  ////////combos//////////////
+  "slider-layout#combos":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "allCombos"
+    },
+    "children": [
+      "info-card#comboOne", 
+      "info-card#combotwo", 
+      "info-card#combothree"
+    ]
+  },
+  
+  "info-card#comboOne":{
+    "props": {
+      "id": "info-card-slider-combo-one",
+      "isFullModeStyle": false,
+      "textPosition": "bottom",
+      "headline": "COMBO HOMBRE",
+      "subhead": "Encuentra una variedad de combos que se ajusten a tu estilo.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/Fist-07590_800x_crop_center.jpg?v=1625602314",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/",
+      "blockClass": "Combo",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#combotwo":{
+    "props": {
+      "id": "info-card-slider-combo-two",
+      "isFullModeStyle": false,
+      "textPosition": "bottom",
+      "headline": "COMBO MUJER",
+      "subhead": "Encuentra una variedad de combos que se ajusten a tu estilo.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/Fist-07450_800x_crop_center.jpg?v=1625602137",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/",
+      "blockClass": "Combo",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#combothree":{
+    "props": {
+      "id": "info-card-slider-combo-three",
+      "isFullModeStyle": false,
+      "textPosition": "bottom",
+      "headline": "COMBO MUJER",
+      "subhead": "Encuentra una variedad de combos que se ajusten a tu estilo.",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/Fist-07645_800x_crop_center.jpg?v=1625602277",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/",
+      "blockClass": "Combo",
+      "textAlignment": "center"
+    }
+  },
+  /////////combos title ///////////7
+  "rich-text#combosTitle":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "COMBOS",
+      "blockClass": "titleCombo"
     }
   },
    //vitrina de productos
@@ -80,19 +213,19 @@
     "blocks":["product-summary.shelf"],
     "props":{
       "productList": {
-        "titleText": "SALE",
+        "titleText": "NUEVOS PRODUCTOS",
         "itemsPerPage": 4,
         "maxItems": 10,
         "minItemsPerPage": 2,
         "scroll": "BY_PAGE",
         "arrows": "true",
-        "blockClass": "textosSec",
+        "blockClass": "vitrina1",
         "showPaginationDots": "never"
     },
     "autoplay":{
       "timeout": 3000,
       "stopOnHover": true
-    }
+      }
     }
   }
 }

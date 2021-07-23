@@ -39,7 +39,7 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "¡ENVÍO GRATIS POR COMPRAS SUPERIORES A 100.000!",
+      "content": "Envíos GRATIS a todo Colombia por compras superiores a $100.000, Disponible el servicio de pago contra entrega.",
       "blockClass": "envioGratis"
     }
   },
@@ -66,19 +66,20 @@
       "flex-layout.col#spacer",
       "search-bar",
       // "locale-switcher",
-      "login",
+      "login#prueba",
       "minicart.v2"
     ]
   },
-  // "login#prueba": {
-  //   "props": {
-  //     "emailAndPasswordTitle": "LOG-IN",
-  //     "accessCodeTitle": "Acess Code LOG-IN",
-  //     "emailPlaceholder": "e-mail",
-  //     "passwordPlaceholder": "password",
-  //     "showPasswordVerificationIntoTooltip": true
-  //   }
-  // },
+  "login#prueba": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "optionsTitle": "Login",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
 ////////////////menu///////////////////////////
 "vtex.menu@2.x:menu#category-menu": {
   "props": {
@@ -102,7 +103,7 @@
       "href": "/new/",
       "noFollow": false,
       "tagTitle": "New",
-      "text": "New"
+      "text": "NEW"
     },
     "blockClass": "menuTitleNew"
   }
@@ -177,7 +178,8 @@
       "noFollow": false,
       "tagTitle": "ESQUELETO",
       "text": "ESQUELETO"
-    }
+    },
+    "blockClass": "contentSubmenu"
   }
 },
 
@@ -193,7 +195,9 @@
       "noFollow": false,
       "tagTitle": "MANGA CORTA",
       "text": "MANGA CORTA"
-    }
+    },
+    "blockClass": "contentSubmenu"
+
   }
 },
 ////////////////sub menu pants y licras/////////////////
@@ -237,7 +241,8 @@
       "noFollow": false,
       "tagTitle": "PANTALONETAS",
       "text": "PANTALONETAS"
-    }
+    },
+    "blockClass": "contentSubmenu"
   }
 },
 
@@ -253,7 +258,8 @@
       "noFollow": false,
       "tagTitle": "LICRAS",
       "text": "LICRAS"
-    }
+    },
+    "blockClass": "contentSubmenu"
   }
 },
 //////////////menu women////////////////
@@ -327,7 +333,8 @@
       "noFollow": false,
       "tagTitle": "CAMISETAS",
       "text": "CAMISETAS"
-    }
+    },
+    "blockClass": "contentSubmenu"
   }
 },
 
@@ -343,7 +350,8 @@
       "noFollow": false,
       "tagTitle": "TOPS",
       "text": "TOPS"
-    }
+    },
+    "blockClass": "contentSubmenu"
   }
 },
 ////////////////sub menu women pants y licras///////////////////////
@@ -386,7 +394,8 @@
       "noFollow": false,
       "tagTitle": "PANTALONETAS",
       "text": "PANTALONETAS"
-    }
+    },
+    "blockClass": "contentSubmenu"
   }
 },
 "menu-item#category-women-licras":{
@@ -401,7 +410,8 @@
       "noFollow": false,
       "tagTitle": "LICRAS",
       "text": "LICRAS"
-    }
+    },
+    "blockClass": "contentSubmenu"
   }
 },
   ///////////////////////////////////////
@@ -420,8 +430,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://www.designevo.com/res/templates/thumb_small/yellow-handbag-and-black-t-shirt.webp",
-      "width": "80"
+      "url": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/Logo_cuadrado_2ded7196-dda6-4a39-a1b0-0513527cd113.png?v=1626289061",
+      "width": "100"
     }
   },
   "header-layout.mobile": {

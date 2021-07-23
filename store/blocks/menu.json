@@ -10,6 +10,7 @@
       "menu-item#cambios",
       "menu-item#politicas"
     ]
+    
   },
   "rich-text#aboutus":{
     "props": { 
@@ -195,7 +196,7 @@
         "href": "/where",
         "noFollow": true,
         "tagTitle": "where",
-        "text": "¿Dónde está mi pedido?"
+        "text": "ACERCA DE NOSOTROS"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
@@ -218,7 +219,7 @@
     "props": {
       "itemProps": {
         "tagTitle": "Decoration",
-        "text": "Decoration"
+        "text": "¿TE AYUDAMOS?"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
@@ -242,7 +243,7 @@
     "props": {
       "itemProps": {
         "tagTitle": "Sale",
-        "text": "Sale"
+        "text": "CONTÁCTANOS"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
@@ -282,7 +283,7 @@
         "href": "/where",
         "noFollow": true,
         "tagTitle": "where",
-        "text": "¿Dónde está mi pedido?"
+        "text": "ACERCA DE NOSOTROS"
       },
       "blockClass":"contenidoFooter"
     }

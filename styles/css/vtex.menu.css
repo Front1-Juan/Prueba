@@ -1,31 +1,40 @@
 .menuContainerNav{
     margin: 30px 0px;
+    
 }
 
 .styledLinkContent--menuTitleNew{
-    color:#CE1212;
+    color:#055052;
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Raleway-medium';
 }
 
 .styledLinkContent--menuTitle{
-    color: #E48257;
+    color: #232323;
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Raleway-medium';
 }
 
 .submenuWrapper{
-    background-color: #FDFAF6;
+    background-color: #232323;
 }
 
 .styledLinkContent--titleSubMenu{
-    color: #4E3620;
-    font-size: 15px;
+    color: white;
+    font-size: 13px;
     font-weight: bold;
+    font-family: 'Raleway-medium';
+}
+
+.styledLink--contentSubmenu{
+    color: white;
+    font-family: 'Raleway-medium';
 }
 
 .styledLinkContent--contenidoFooter {
     color: #151515;
     font-family: 'Raleway-medium';
-    font-size: 13.3px;
+    font-size: 11px;
 }

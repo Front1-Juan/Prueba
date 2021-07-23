@@ -1,9 +1,13 @@
+.notificationBarContainer{
+    background-color: #202020;
+}
+
 .notificationBarInner--envioGratis {
-    background-color:#FFE277;
-    color:#41444B;
+    /* background-color:#202020; */
+    color:white;
     font-size:12px;
     font-weight: 600;
-    margin: -14px 0px;
+    margin: 10px 0px;
 
 }
 
@@ -12,6 +16,19 @@
     margin-right: 10px;
 }
 
+.infoCardContainer--collectionFirst{
+    background-size: contain!important;
+    height: 430px;
+    width: 430px;
+    /* padding: 8px 0px; */
+    margin-top: -50px;
+    transition: 0.5s all ease-in-out;
+    border-color: white;
+}
+
+.infoCardContainer--collectionFirst:hover{
+    transform: scale(1.03);
+}
 .infoCardContainer--cardMen{
     background-size: contain !important;
     height: 800px;
@@ -19,40 +36,84 @@
     background-color: #FFFEFA;
 }
 
-.infoCardCallActionContainer--cardMen :global(.vtex-button){
-    background-color: #476072;
-    border: 1px solid #476072;
+.infoCardCallActionContainer--collectionFirst :global(.vtex-button){
+    padding: 0;
+    margin: 0;
+    margin-left: -47px;
+    width: 428px;
+    height: 288px;
+    background-color: transparent;
+    border-color: transparent;
+    /* transition: transform .2s;  */
 }
 
-.infoCardHeadline--cardMen{
-    color: #2B2B2B;
-    font-size: 32px;
+.infoCardCallActionContainer--collectionFirst:hover :global(.vtex-button){
+    background-color: rgba(44, 46, 67,0.3);
+    text-decoration: underline;
+    /* transform: scale(1.5); */
+
 }
 
-
-.infoCardSubhead--cardMen{
-    color: #548CA8;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 12px;
+.infoCardCallActionContainer--Combo :global(.vtex-button){
+    background-color: #232323;
+    border-color: #232323;
+    color: white;
+    font-weight: 600;
+    border-radius: inherit;
+    font-family: 'Raleway-medium';
+    padding: 0px 19px;
 }
 
-.infoCardHeadline--cardWomen{
-    color: #DA7F8F;
-    font-size: 32px;
+.infoCardCallActionContainer--Combo:hover :global(.vtex-button){
+    background-color: white;
+    border-color: 0.5px solid #232323;
+    color: #232323;
 }
-.infoCardSubhead--cardWomen{
-    color: #45526C;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 12px;
-}
-
-.infoCardCallActionContainer--cardWomen :global(.vtex-button){
-    background-color: #476072;
-    border: 1px solid #476072;
+.infoCardContainer--Combo{
+    /* padding: 0rem 1rem 0; */
+    flex-direction: column-reverse;
+    /* margin: 0; */
+    /* align-items: flex-start; */
 }
 
-.infoCardContainer--cardWomen {
-    background-color: #FAF3F3;
+.infoCardImageContainer--Combo {
+    width: 100% !important;
+}
+
+/* .slideChildrenContainer--allCombos .infoCardHeadline--Combo {
+    font-size: 10px;
+} */
+
+.infoCardHeadline--Combo{
+    font-family: 'Raleway-medium';
+    font-size: 20px;
+    color: #232323;
+}
+
+.infoCardSubhead--Combo {
+    font-family: 'Raleway-medium';
+    font-size: 12px;
+    color: #232323;
+    /* flex-direction: row-reverse; */
+    /* margin: 10px -1px; */
+    /* padding: 0px 56px; */
+}
+
+.infoCardTextContainer--Combo{
+    width: 100%;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px){
+    .infoCardContainer--Combo{
+        flex-direction: column-reverse;
+
+    }
+}
+
+@media screen and (max-width: 767px){
+    .infoCardContainer--Combo{
+        flex-direction: column;
+
+    }
 }
