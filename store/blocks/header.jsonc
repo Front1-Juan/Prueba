@@ -89,7 +89,7 @@
     "menu-item#category-new",
     "menu-item#category-men",
     "menu-item#category-women"
-    // "menu-item#about-us"
+    
   ]
 },
 "menu-item#category-new":{
@@ -116,7 +116,7 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/men/",
+      "href": "/Hombre/",
       "noFollow": false,
       "tagTitle": "HOMBRE",
       "text": "HOMBRE"
@@ -134,7 +134,7 @@
   },
   "children": [
     "vtex.menu@2.x:menu#category-men-camisetas",
-    "vtex.menu@2.x:menu#category-men-pants-licras"
+    "vtex.menu@2.x:menu#category-men-pants-jogger"
   ]
 },
 ////////////////sub menu camisteas/////////////////
@@ -144,8 +144,8 @@
   },
   "children": [
     "menu-item#category-men-camisetas",
-    "menu-item#category-men-esqueleto",
-    "menu-item#category-men-mangacorta"
+    "menu-item#category-men-mangacorta",
+    "menu-item#category-men-esqueleto"
   ]
 },
 "menu-item#category-men-camisetas":{
@@ -156,7 +156,7 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/camisetas/",
+      "href": "/Hombre/camisetas/",
       "noFollow": false,
       "tagTitle": "CAMISETAS",
       "text": "CAMISETAS"
@@ -174,7 +174,7 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/esqueleto/",
+      "href": "/Hombre/camisetas/esqueletos/",
       "noFollow": false,
       "tagTitle": "ESQUELETO",
       "text": "ESQUELETO"
@@ -191,7 +191,7 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/mangacorta/",
+      "href": "/Hombre/camisetas/Manga-Corta/",
       "noFollow": false,
       "tagTitle": "MANGA CORTA",
       "text": "MANGA CORTA"
@@ -200,21 +200,21 @@
 
   }
 },
-////////////////sub menu pants y licras/////////////////
-"vtex.menu@2.x:menu#category-men-pants-licras":{
+////////////////sub menu pants y jogger/////////////////
+"vtex.menu@2.x:menu#category-men-pants-jogger":{
   "props": {
     "orientation": "vertical"
   },
   "children": [
-    "menu-item#category-men-pantslicras",
+    "menu-item#category-men-pantsjogger",
     "menu-item#category-men-pantalonetas",
-    "menu-item#category-men-licras"
+    "menu-item#category-men-jogger"
   ]
 },
 
-"menu-item#category-men-pantslicras":{
+"menu-item#category-men-pantsjogger":{
   "props": {
-    "id": "menu-item-category-men-pantslicras",
+    "id": "menu-item-category-men-pantsjogger",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -222,8 +222,8 @@
       "type": "internal",
       "href": "/pantslicras/",
       "noFollow": false,
-      "tagTitle": "PANTALONETAS Y LICRAS",
-      "text": "PANTALONETAS Y LICRAS"
+      "tagTitle": "PANTALONETAS Y JOGGERS",
+      "text": "PANTALONETAS Y JOGGERS"
     },
     "blockClass": "titleSubMenu"
   }
@@ -246,18 +246,18 @@
   }
 },
 
-"menu-item#category-men-licras":{
+"menu-item#category-men-jogger":{
   "props": {
-    "id": "menu-item-category-men-licras",
+    "id": "menu-item-category-men-jogger",
     "type": "custom",
     "iconId": null,
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/licras/",
+      "href": "/jogger/",
       "noFollow": false,
-      "tagTitle": "LICRAS",
-      "text": "LICRAS"
+      "tagTitle": "jogger",
+      "text": "JOGGERS"
     },
     "blockClass": "contentSubmenu"
   }
@@ -289,7 +289,7 @@
   },
   "children": [
     "vtex.menu@2.x:menu#category-women-camisetasytops",
-    "vtex.menu@2.x:menu#category-women-pants-licras"
+    "vtex.menu@2.x:menu#category-women-pants-jogger"
   ]
 },
 ////////////////sub menu women camisetas y tops///////////////////////
@@ -354,30 +354,30 @@
     "blockClass": "contentSubmenu"
   }
 },
-////////////////sub menu women pants y licras///////////////////////
-"vtex.menu@2.x:menu#category-women-pants-licras":{
+////////////////sub menu women pants y jogger///////////////////////
+"vtex.menu@2.x:menu#category-women-pants-jogger":{
   "props": {
     "orientation": "vertical"
   },
   "children": [
-    "menu-item#category-women-pantasylicras",
+    "menu-item#category-women-pantasyjogger",
     "menu-item#category-women-pants",
-    "menu-item#category-women-licras"
+    "menu-item#category-women-jogger"
   ]
 },
 
-"menu-item#category-women-pantasylicras":{
+"menu-item#category-women-pantasyjogger":{
   "props": {
-    "id": "menu-item-category-women-pantasylicras",
+    "id": "menu-item-category-women-pantasyjogger",
     "type": "custom",
     "iconId": null,
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/pantasylicras/",
+      "href": "/pantasyjogger/",
       "noFollow": false,
-      "tagTitle": "PANTALONETAS Y LICRAS",
-      "text": "PANTALONETAS Y LICRAS"
+      "tagTitle": "PANTALONETAS Y JOGGERS",
+      "text": "PANTALONETAS Y JOGGERS"
     },
     "blockClass": "titleSubMenu"
   }
@@ -398,18 +398,18 @@
     "blockClass": "contentSubmenu"
   }
 },
-"menu-item#category-women-licras":{
+"menu-item#category-women-jogger":{
   "props": {
-    "id": "menu-item-category-women-licras",
+    "id": "menu-item-category-women-jogger",
     "type": "custom",
     "iconId": null,
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/licras/",
+      "href": "/jogger/",
       "noFollow": false,
-      "tagTitle": "LICRAS",
-      "text": "LICRAS"
+      "tagTitle": "JOGGERS",
+      "text": "JOGGERS"
     },
     "blockClass": "contentSubmenu"
   }

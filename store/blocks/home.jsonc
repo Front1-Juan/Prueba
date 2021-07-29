@@ -1,19 +1,6 @@
 {
   "store.home": { 
     "blocks": [
-      // "slider-layout#principal",
-      // "slider-layout#bannercollection",
-      // "shelf#home",
-      // "rich-text#combosTitle",
-      // "slider-layout#combos"
-      "responsive-layout.desktop",
-      "responsive-layout.tablet",
-      "responsive-layout.phone"
-    ]
-  },
-
-  "responsive-layout.desktop":{
-    "children": [
       "slider-layout#principal",
       "slider-layout#bannercollection",
       "shelf#home",
@@ -82,14 +69,13 @@
   "slider-layout#bannercollection": {
     "props": {
       "itemsPerPage": {
-        "desktop": 3,
-        "tablet": 1,
-        "phone": 1
+        "desktop": 3
       },
       "infinite": true,
       "showNavigationArrows": "never",
       "showPaginationDots": "never",
       "blockClass": "collectionAll"
+      
     },
     
     "children": [
@@ -98,14 +84,6 @@
       "info-card#collection-three"]
   },
 
-  ////////////prueba responsive/////////////////77
-  // "responsive-layout.desktop#desktop": {
-  //   "children": ["rich-text#desktop"]
-  // },
-  
-  // "responsive-layout.mobile#mobile": {
-  //   "children": ["rich-text#mobile"]
-  // },
   ///////////collection-one
 
   "info-card#collection-one-desk":{
@@ -227,142 +205,13 @@
       "productList": {
         "titleText": "NUEVOS PRODUCTOS",
         "itemsPerPage": 4,
-        "maxItems": 10,
-        "minItemsPerPage": 2,
+        "maxItems": 6,
+        "minItemsPerPage": 1,
         "scroll": "BY_PAGE",
         "arrows": "true",
-        "blockClass": "vitrina1",
         "showPaginationDots": "never"
-    },
-    "autoplay":{
-      "timeout": 3000,
-      "stopOnHover": true
-      }
-    }
-  },
-  ///responsive tablet
-  "responsive-layout.tablet": {
-    "children": [
-      "slider-layout#principal-tablet"
-      // ,
-      // "slider-layout#bannercollection-tablet"
-    ]
-  },
-  "slider-layout#principal-tablet": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
       },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "usePagination": true,
-      "slideTransition": {
-        "speed": 400,
-        "delay": 500,
-        "timing": "ease"
-      },
-      "autoplay": {
-        "timeout": 3000,
-        "stopOnHover": false
-      },
-      "blockClass": "carousel"
-    },
-    "children": [
-      "image#uno-tablet",
-      "image#dos-tablet", 
-      "image#tres-tablet",
-      "image#cuatro-tablet"
-    ]
-  },
-
-  "image#uno-tablet": {
-    "props": {
-      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST2.jpg?v=1624556131",
-      "maxHeight": "100%"
-    }
-  },
-  "image#dos-tablet": {
-    "props": {
-      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST9.jpg?v=1624556380",
-      "maxHeight": "100%"
-    }
-  },
-  "image#tres-tablet": {
-    "props": {
-      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST10.jpg?v=1624564987",
-      "maxHeight": "100%"
-    }
-  },
-  "image#cuatro-tablet": {
-    "props": {
-      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST6.jpg?v=1624556441",
-      "maxHeight": "100%"
-    }
-  },
-  
-//banner collection tablet
-
-  ///responsive mobile
-  "responsive-layout.phone":{
-    "children": [
-      "slider-layout#principal-mobile"
-    ]
-  },
-  "slider-layout#principal-mobile": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "usePagination": true,
-      "slideTransition": {
-        "speed": 400,
-        "delay": 500,
-        "timing": "ease"
-      },
-      "autoplay": {
-        "timeout": 3000,
-        "stopOnHover": false
-      },
-      "blockClass": "carousel"
-    },
-    "children": [
-      "image#uno-mobile",
-      "image#dos-mobile", 
-      "image#tres-mobile",
-      "image#cuatro-mobile"
-    ]
-  },
-
-  "image#uno-mobile": {
-    "props": {
-      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST2.jpg?v=1624556131",
-      "maxHeight": "100%"
-    }
-  },
-  "image#dos-mobile": {
-    "props": {
-      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST9.jpg?v=1624556380",
-      "maxHeight": "100%"
-    }
-  },
-  "image#tres-mobile": {
-    "props": {
-      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST10.jpg?v=1624564987",
-      "maxHeight": "100%"
-    }
-  },
-  "image#cuatro-mobile": {
-    "props": {
-      "src": "https://cdn.shopify.com/s/files/1/0275/2679/1277/files/BANNER-FIST6.jpg?v=1624556441",
-      "maxHeight": "100%"
+    "blockClass": "vitrina1"
     }
   }
   

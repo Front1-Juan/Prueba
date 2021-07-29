@@ -18,23 +18,53 @@
 }
 
 .submenuWrapper{
-    background-color: #232323;
+    background-color: rgb(255,255,255);
 }
 
 .styledLinkContent--titleSubMenu{
-    color: white;
+    color: black;
     font-size: 13px;
     font-weight: bold;
     font-family: 'Raleway-medium';
 }
 
+.styledLinkContent--titleSubMenu:hover{
+    text-decoration: underline;
+    color: #2F5D62;
+}
+
 .styledLink--contentSubmenu{
-    color: white;
+    color: black;
     font-family: 'Raleway-medium';
+}
+
+.styledLink--contentSubmenu:hover{
+    text-decoration: underline;
+    color: #2F5D62;
 }
 
 .styledLinkContent--contenidoFooter {
     color: #151515;
     font-family: 'Raleway-medium';
     font-size: 11px;
+}
+
+
+/* ****prueba submenu********* */
+
+.submenuWrapper--isOpen {
+    /* margin: 0px 0px; */
+    padding-right: 756px;
+    padding-left: 460px;
+    margin-top: 14px;
+    margin-left: -463px;
+}
+
+.submenu {
+    margin-top: -44px;
+}
+.styledLinkContent--menuTitle:hover{
+    /* background-color: rgba(44, 46, 67,0.3); */
+    text-decoration: underline;
+    color: #2F5D62;
 }

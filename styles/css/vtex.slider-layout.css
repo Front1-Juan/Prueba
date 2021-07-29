@@ -3,3 +3,27 @@
     grid-gap: 0px 23px;
     /* margin: 0 5px; */
 }
+
+/* responsive */
+@media screen and (max-width: 830px){
+    .sliderTrack--allCombos {
+        padding: 0;
+        grid-gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slide--allCombos--hidden{
+        margin-bottom: 2rem;
+        padding: 0;
+        
+    }
+
+    .sliderTrack--collectionAll {
+        padding: 0;
+        grid-gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

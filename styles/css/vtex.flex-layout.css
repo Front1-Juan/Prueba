@@ -10,3 +10,24 @@
 .flexRow--menu-link{
     background-color: rgb(255,255,255);
 }
+
+.flexRow--boton-detalle {
+    height: 43px;
+    width: 48%;
+    margin-left: 0px;
+
+}
+
+.stretchChildrenWidth :global(.vtex-button){
+    background-color: #232323;
+    border-color: #232323;
+    color: white;
+    font-weight: 600;
+    font-family: 'Raleway-medium';
+}
+
+/* .stretchChildrenWidth :hover :global(.vtex-button){
+    background-color:white;
+    border-color: #232323;
+    color: #232323;
+} */

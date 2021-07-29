@@ -29,12 +29,45 @@
       "product-summary-space",
       "product-summary-image",
       "product-summary-name",
+      // "product-summary-description",
       "product-summary-price",
+      "product-summary-sku-selector#home",
       // "product-identifier.summary",
       "add-to-cart-button"
     ],
     "props": {
       "blockClass": "vitrina-productos"
     }
+  },
+  "product-summary-sku-selector#home":{
+    "props": {
+      "blockClass": "sku-home"
+    }
+  },
+
+  // segunda vitrina
+  "product-summary.shelf#vitrina-categoria": {
+    "children": [
+      "product-summary-add-to-list-button",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-image",
+      "product-summary-name",
+      // "product-summary-description",
+      "product-summary-price",
+      "product-summary-sku-selector#categoria",
+      // "product-identifier.summary",
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "vitrina-productos-categoria"
+    }
+  },
+  "product-summary-sku-selector#categoria":{
+    "props": {
+      "blockClass": "sku-categoria"
+    }
   }
+
+  
 }

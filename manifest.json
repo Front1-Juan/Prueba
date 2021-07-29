@@ -1,7 +1,7 @@
 {
   "vendor": "epartner",
   "name": "minimumtheme",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -36,9 +36,13 @@
     "vtex.product-identifier": "0.x",
     "vtex.product-specification-badges": "0.x",
     "vtex.product-review-interfaces": "1.x",
+    "vtex.product-gifts": "0.x",
+    "vtex.product-customizer": "2.x",
+    "vtex.product-price": "1.x",
     "vtex.telemarketing": "2.x",
     "vtex.order-placed": "2.x",
     "vtex.stack-layout": "0.x",
+    "vtex.product-bookmark-interfaces": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.responsive-layout": "0.x",
     "vtex.slider-layout": "0.x",
