@@ -26,8 +26,8 @@
     font-family: 'Raleway-medium';
 }
 
-/* .stretchChildrenWidth :hover :global(.vtex-button){
+.stretchChildrenWidth:hover :global(.vtex-button){
     background-color:white;
     border-color: #232323;
     color: #232323;
-} */
+} 

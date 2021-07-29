@@ -2,22 +2,6 @@
     background-color: #202020;
 }
 
-/* .skuSelectorOptionsList{
-    justify-content: space-evenly;
-} */
-.SKUSelectorContainer--sku-home.skuSelectorContainer--sku-home.skuSelectorSubcontainer--almacenamiento.skuSelectorNameContainer.skuSelectorOptionsList{
-    justify-content: space-evenly;
-    }
-
-.productNameContainer {
-        font-family: 'Raleway-medium';
-        font-size: 25px;
-    }
-
-/* sku-selector */
-.frameAround--sku-detalle{
-    border-color: red;
-}
 
 .notificationBarInner--envioGratis {
     /* background-color:#202020; */
@@ -171,4 +155,9 @@
     .infoCardCallActionContainer--collection{
         margin: 0;
     }
+}
+
+/* sku selector detalle */
+.frameAround--sku-detalle{
+    border-color: #003638;
 }

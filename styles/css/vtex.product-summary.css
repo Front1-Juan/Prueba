@@ -13,7 +13,7 @@
 
 /* carrito estilos */
 .element--vitrina-productos .currencyInteger {
-    font-size: 22px;
+    font-size: 20px;
     font-family: system-ui;
     color: #171010;
 }
@@ -28,6 +28,7 @@
     font-family: 'Raleway-medium';
     border-radius: inherit;
     padding: 0px 30px;
+    top: -5px;
   }
 
 
@@ -36,13 +37,29 @@
     border-color: #232323;
     color: #232323;
 
-
-}
-/* 
-.frameAround{
-    border-color: #57837B;
 }
 
-.skuSelectorInternalBox{
-    border-color: #C9D8B6;
-} */
+.element--vitrina-productos-categoria:hover :global(.vtex-button){
+    background-color:white;
+    border-color: #232323;
+    color: #232323;
+
+}
+
+
+
+
+.priceContainer {
+    margin-top: -2px;
+    /* font-size: 20px; */
+}
+
+/* producto categoria */
+.nameContainer{
+    padding-bottom: 1px;
+}
+
+.productBrand {
+    color: #515E63;
+    font-weight: 600;
+}
