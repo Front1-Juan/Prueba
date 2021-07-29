@@ -65,11 +65,11 @@
     padding: 0px 19px;
 }
 
-.infoCardCallActionContainer--Combo:hover :global(.vtex-button){
+/* .infoCardCallActionContainer--Combo:hover :global(.vtex-button){
     background-color: white;
     border-color: 0.5px solid #232323;
     color: #232323;
-}
+} */
 .infoCardContainer--Combo{
     /* padding: 0rem 1rem 0; */
     flex-direction: column-reverse;

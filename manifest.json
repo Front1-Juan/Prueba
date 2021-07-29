@@ -1,7 +1,7 @@
 {
   "vendor": "epartner",
   "name": "minimumtheme",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -51,6 +51,9 @@
     "vtex.sticky-layout": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.store-image": "0.x"
+  },
+  "peerDependencies": {
+    "vtex.location-availability": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

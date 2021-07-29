@@ -31,21 +31,21 @@
     top: -5px;
   }
 
-
   .element--vitrina-productos:hover :global(.vtex-button){
     background-color:white;
-    border-color: #232323;
-    color: #232323;
+    border-color: red;
+    color: red;
 
 }
 
-.element--vitrina-productos-categoria:hover :global(.vtex-button){
+
+
+.element--vitrina-productos-categoria .pointer:hover :global(.vtex-button){
     background-color:white;
     border-color: #232323;
     color: #232323;
 
 }
-
 
 
 

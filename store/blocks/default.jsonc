@@ -21,7 +21,7 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
+// virtina del home
   "product-summary.shelf": {
     "children": [
       "product-summary-add-to-list-button",
@@ -29,6 +29,7 @@
       "product-summary-space",
       "product-summary-image",
       "product-summary-name",
+      // "product-location-availability",
       // "product-summary-description",
       "product-summary-price",
       // "product-summary-sku-selector#home",
@@ -39,11 +40,10 @@
       "blockClass": "vitrina-productos"
     }
   },
-  // "product-summary-sku-selector#home":{
-  //   "props": {
-  //     "blockClass": "sku-home"
-  //   }
+  // "product-location-availability":{
+  //   "pickupFirst": false
   // },
+
 
   // segunda vitrina
   "product-summary.shelf#vitrina-categoria": {
@@ -53,6 +53,7 @@
       "product-summary-space",
       "product-summary-image",
       "product-summary-name",
+      "product-location-availability",
       // "product-summary-description",
       "product-summary-price",
       // "product-summary-sku-selector#categoria",
@@ -61,6 +62,13 @@
     ],
     "props": {
       "blockClass": "vitrina-productos-categoria"
+    }
+  },
+  "product-location-availability": {
+    "props": {
+      "maxItems": 3,
+      "orderBy": "cheaper",
+      "pickupFirst": false
     }
   },
   "product-summary-sku-selector#categoria":{

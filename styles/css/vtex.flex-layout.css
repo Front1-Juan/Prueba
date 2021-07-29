@@ -18,16 +18,6 @@
 
 }
 
-.stretchChildrenWidth :global(.vtex-button){
-    background-color: #232323;
-    border-color: #232323;
-    color: white;
-    font-weight: 600;
-    font-family: 'Raleway-medium';
+.price {
+    display: none;
 }
-
-.stretchChildrenWidth:hover :global(.vtex-button){
-    background-color:white;
-    border-color: #232323;
-    color: #232323;
-} 

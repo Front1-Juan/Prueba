@@ -200,7 +200,9 @@
   },
    //vitrina de productos
   "shelf#home": {
-    "blocks":["product-summary.shelf"],
+    "blocks":[
+      "product-summary.shelf"
+    ],
     "props":{
       "productList": {
         "titleText": "NUEVOS PRODUCTOS",
@@ -214,6 +216,7 @@
     "blockClass": "vitrina1"
     }
   }
+
   
 
 }
