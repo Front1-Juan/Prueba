@@ -1,0 +1,8 @@
+.link:hover {
+    color: #082032;
+    text-decoration: underline;
+  }
+.container{
+    font-family: 'roboto-regular';
+    text-transform: capitalize;
+}

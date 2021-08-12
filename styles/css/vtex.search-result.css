@@ -1,13 +1,32 @@
-.galleryTitle--layout{
-    font-family: 'Raleway-medium';
-    font-size: 30px;
+.galleryTitle--layout, .filtersWrapper {
+    font-family: 'roboto-regular' !important;
+    text-transform: uppercase;
+    /* font-size: 30px; */
     font-weight: 600;
-    color: #334443;
+    color: #082032 !important;
 }
 
-.filters--layout {
-    font-family: 'Raleway-medium';
-    color: #2F5D62;
+.filterItem :global(.vtex-checkbox__inner-container ){
+    background-color: #082032;
+    border-color: #082032;
+}
+
+.filterTemplateOverflow :global(.vtex-slider__selector){ 
+    background-color: #082032;
+    border-color: #082032;
+}
+
+.filterTemplateOverflow :global(.vtex-slider__base-internal){ 
+    background-color: #082032;
+    border-color: #082032;
+}
+/* .filters--layout {
+    font-family: 'roboto-regular'!important;
+    color: #082032 !important;
     font-size: 14px;
     font-weight: 600;
-}
+} */
+
+/* .filter__container--title{
+    display: none;
+} */

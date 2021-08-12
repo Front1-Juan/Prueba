@@ -1,0 +1,24 @@
+
+/* boton cantidad  */
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button):hover {
+    border-left: 0;
+    border-color: #232323;
+    background-color: #232323;
+    color: white;
+  }
+
+  .quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button):hover {
+    border-left: 0;
+    border-color: #232323;
+    background-color: #232323;
+    color: white;
+  }
+
+  .quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button),
+  .quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button){
+     border-color: #232323;
+  }
+
+  .quantitySelectorStepper :global(.vtex-numeric-stepper__input){
+    border-color: #232323;
+  }

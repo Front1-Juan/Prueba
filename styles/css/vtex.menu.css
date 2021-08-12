@@ -12,7 +12,7 @@
 
 .styledLinkContent--menuTitle{
     color: #232323;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Raleway-medium';
 }
@@ -23,7 +23,7 @@
 
 .styledLinkContent--titleSubMenu{
     color: black;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Raleway-medium';
 }
@@ -52,14 +52,19 @@
 
 /* ****prueba submenu********* */
 
-.submenuWrapper--isOpen {
-    /* margin: 0px 0px; */
-    padding-right: 756px;
-    padding-left: 460px;
-    margin-top: 14px;
-    margin-left: -463px;
+.submenuWrapper--subMenuHombre {
+    padding-right: 756px !important;
+    padding-left: 460px !important;
+    margin-top: 14px !important;
+    margin-left: -463px !important;
 }
 
+.submenuWrapper--subMenuMujer {
+    padding-right: 756px !important;
+    padding-left: 348px !important;
+    margin-top: 14px !important;
+    margin-left: -463px !important;
+}
 .submenu {
     margin-top: -44px;
 }
@@ -68,3 +73,9 @@
     text-decoration: underline;
     color: #2F5D62;
 }
+
+
+
+/* .flex.flex-column.vtex-store-components-3-x-skuSelectorSubcontainer--color.mb7.vtex-store-components-3-x-skuSelectorSubcontaine {
+    display: none;
+} */

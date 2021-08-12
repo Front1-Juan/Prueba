@@ -130,7 +130,8 @@
 ///////////Submenu men/////////
 "vtex.menu@2.x:submenu#category-men":{
   "props": {
-    "width": "auto"
+    "width": "auto",
+    "blockClass": "subMenuHombre"
   },
   "children": [
     "vtex.menu@2.x:menu#category-men-camisetas",
@@ -285,7 +286,8 @@
 ////////////////////sub menu women///////////////////////
 "vtex.menu@2.x:submenu#category-women":{
   "props": {
-    "width": "auto"
+    "width": "auto",
+    "blockClass": "subMenuMujer"
   },
   "children": [
     "vtex.menu@2.x:menu#category-women-camisetasytops",
@@ -296,6 +298,7 @@
 "vtex.menu@2.x:menu#category-women-camisetasytops":{
   "props": {
     "orientation": "vertical"
+    
   },
   "children": [
     "menu-item#category-women-camisetasytops",

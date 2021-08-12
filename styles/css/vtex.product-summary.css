@@ -21,6 +21,7 @@
 
 
 .element--vitrina-productos :global(.vtex-button) {
+    display: none;
     background-color: #232323;
     border-color: #232323;
     color: white;
@@ -29,12 +30,39 @@
     border-radius: inherit;
     padding: 0px 30px;
     top: -5px;
+    
   }
-
+/*boton productos categoria*/
   .element--vitrina-productos:hover :global(.vtex-button){
-    background-color:white;
-    border-color: red;
-    color: red;
+    /* background-color:white;
+    border-color:  #232323;
+    color:  #232323; */
+    background-color: #232323 !important;
+    border-color: #232323 !important;
+    color: white !important;
+
+}
+
+.clearLink--vitrina-productos:hover .element--vitrina-productos :global(.vtex-button) {
+    display: block;
+    /* margin-top: -60px; */
+
+}
+
+
+
+
+.element--vitrina-productos-categoria :global(.vtex-button){
+    background-color:#232323 !important;
+    border-color:  #232323 !important;
+    color:  white !important;
+
+}
+
+.element--vitrina-productos-categoria:hover :global(.vtex-button){
+    background-color:white !important;
+    border-color:  #232323 !important;
+    color:  #232323 !important;
 
 }
 
@@ -62,4 +90,25 @@
 .productBrand {
     color: #515E63;
     font-weight: 600;
+}
+
+.frameAround--sku-home {
+    border-color: #171717;
+}
+
+
+/* hover sku*/
+.skuSelectorInternalBox--sku-home:hover {
+    border-color: #171717;
+    background-color: #171717;
+}
+ .skuSelectorItemTextValue--sku-home:hover {
+    color: white;
+}
+.absolute--fill:hover{
+    color: white;
+}
+.skuSelectorContainer--sku-home{
+    display: flex;
+    justify-content: center;
 }

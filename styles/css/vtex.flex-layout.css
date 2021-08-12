@@ -18,6 +18,22 @@
 
 }
 
-.price {
-    display: none;
+.flexRowContent--boton-detalle :global(.vtex-button){
+    background-color:#232323 !important;
+    border-color:  #232323 !important;
+    color:  white !important;
+
 }
+
+.flexRowContent--boton-detalle:hover :global(.vtex-button){
+    background-color: white !important;
+    border-color: #232323 !important;
+    color: #232323 !important;
+
+}
+
+
+
+/* .quantitySelectorTitle--cantidad-detalle{
+    color: #171717;font-size: 17px;font-family: 'roboto-regular';font-weight: 600;
+} */

@@ -104,6 +104,13 @@
     width: 100%;
 }
 
+/* .skuSelectorContainer.skuSelectorContainer--sku-home .skuSelectorSubcontainer--color {
+ display: block !important;
+} */
+ .skuSelectorSubcontainer--color {
+ display: block !important;
+}
+
 /* responsive */
 @media screen and (max-width: 1130px){
     .infoCardContainer--collectionFirst{
@@ -157,7 +164,31 @@
     }
 }
 
-/* sku selector detalle */
-.frameAround--sku-detalle{
-    border-color: #003638;
+.frameAround--sku-detalle {
+    border-color: #171717;
 }
+
+.skuSelectorInternalBox--sku-detalle:hover {
+    border-color: #171717;
+    background-color: #171717;
+}
+ .skuSelectorItemTextValue--sku-detalle:hover {
+    color: white;
+}
+
+/*cambio de font-faces*/
+.installmentsPrice,
+.valueWrapper,
+.productBrand {
+  font-family: 'roboto-regular';
+}
+
+/* prodicto detalle */
+.sellingPrice {
+    font-family: 'roboto-regular';
+  }
+  .skuSelectorName {
+    font-family: 'roboto-regular';
+  }
+
+
